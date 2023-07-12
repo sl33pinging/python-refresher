@@ -61,4 +61,6 @@ def __main__():
 
 
 if __name__ == "__main__":
+    # only after running will run, otherwise in import,
+    # the information are not going to be imported
     __main__()
