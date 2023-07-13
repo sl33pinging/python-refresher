@@ -10,14 +10,13 @@ class BankAcct:
 
     def withdraw(self, amountWithdrawn):
         if self.balance >= amountWithdrawn:
-            self.balance -= amountWithdrawn
-            print(
-                f"You have withdrawn: $"
-                + str(amountWithdrawn)
-                + " current balance: $"
-                + str(self.balance)
-            )
-            return self.balance
+            # print(
+            #     f"You have withdrawn: $"
+            #     + str(amountWithdrawn)
+            #     + " current balance: $"
+            #     + str(self.balance)
+            # )
+            return self.balance - amountWithdrawn
         else:
             raise ValueError(
                 f"You do not have enough balance, your current balance is: $"
