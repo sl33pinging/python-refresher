@@ -36,3 +36,7 @@ class Test_Physics(unittest.TestCase):
         # except Exception as e:
         #     self.assertEqual("please input the depth as a positive value", str(e))
         self.assertEqual(physics.calculate_pressure(300), 2943000)
+
+
+if __name__ == "__main__":
+    unittest.main()

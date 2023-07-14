@@ -8,6 +8,7 @@ def calculate_buoyancy(v, density_fluid):
         raise Exception("volume and fluid density cannot be less than or equal to zero")
 
     buoyancy_force = v * density_fluid * _g
+
     return buoyancy_force
 
 
@@ -23,6 +24,7 @@ def will_it_float(v, mass):
 
 def calculate_pressure(h):
     """calculates the pressure in Pascals at a given depth in water"""
+    # h is the depth
     if h < 0:
         raise Exception("please input the depth as a positive value")
     hydrostatic_pressure = _density_water * _g * h
