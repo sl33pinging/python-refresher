@@ -1,6 +1,7 @@
 # TODO: also add a note in docstring that tells if there is an error that is going to be raised
 # TODO: also check the shape of the Thruster magnitudes
 # TODO: need to check like all shapes of the ndarrays
+# TODO: need to do np.power instead of **
 
 import numpy as np
 
