@@ -1,3 +1,5 @@
+# TODO: also add a note in docstring that tells if there is an error that is going to be raised
+
 import numpy as np
 
 _g = 9.81  # gravity
