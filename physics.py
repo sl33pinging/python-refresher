@@ -87,10 +87,10 @@ def calculate_auv_angular_acceleration(
 
 def calculate_auv2_acceleration(T, alpha, theta, mass=100):
     """calculates the acceleration of the AUV in the 2D plane"""
-    sin_alpha = np.sin(np.radians(alpha))
-    cos_alpha = np.cos(np.radians(alpha))
-    sin_theta = np.sin(np.radians(theta))
-    cos_theta = np.cos(np.radians(theta))
+    sin_alpha = np.sin(alpha)
+    cos_alpha = np.cos(alpha)
+    sin_theta = np.sin(theta)
+    cos_theta = np.cos(theta)
     thruster_xy_forces_ratios = np.array(
         [
             [cos_alpha, cos_alpha, -cos_alpha, -cos_alpha],
