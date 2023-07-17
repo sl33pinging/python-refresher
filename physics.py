@@ -127,3 +127,7 @@ def calculate_auv2_angular_acceleration(T, alpha, L, l, inertia=100):
 testarray = np.array([1, 3, 1, 2])
 print(calculate_auv2_acceleration(testarray, 70, 40))
 calculate_auv2_angular_acceleration(testarray, 0.5, 1.5, 1.8)
+
+
+def numpy_array_equal():
+    return np.array([[5, 6], [6, 7]])

@@ -1,5 +1,8 @@
+# TODO: Test all functions of physics, finish physics problem and fix any issues
+
 import unittest
 import physics
+import numpy as np
 
 
 class Test_Physics(unittest.TestCase):
@@ -74,6 +77,9 @@ class Test_Physics(unittest.TestCase):
             physics.calculate_moment_of_inertia(0, 77)
         except Exception as e:
             self.assertEqual(str(e), "please input a positive value for the mass")
+
+    def test_how_to_test_numpy_arrays(self):
+        np.testing.assert_array_equal(physics.numpy_array_equal(), [[5, 6], [6, 7]])
 
 
 if __name__ == "__main__":
